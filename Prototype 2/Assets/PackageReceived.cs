@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PackageReceived : MonoBehaviour
+    
 {
+    public GameObject particleReceived;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +32,8 @@ public class PackageReceived : MonoBehaviour
            // this.GetComponent<AudioSource>().Play();
 
             Debug.Log("received");
+            Debug.Log("boom");
+            GameObject.Instantiate(particleReceived, collision.collider.gameObject.transform.position, Quaternion.identity);
         }
     }
 }
