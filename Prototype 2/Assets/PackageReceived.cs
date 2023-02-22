@@ -6,6 +6,7 @@ public class PackageReceived : MonoBehaviour
     
 {
     public GameObject particleReceived;
+    public bool packageReceived;
 
     // Start is called before the first frame update
     void Start()
@@ -23,16 +24,16 @@ public class PackageReceived : MonoBehaviour
     {
         if (collision.collider.gameObject.CompareTag("Package"))
         {
+
+
+
+
+
+
+            // this.GetComponent<AudioSource>().Play();
+            packageReceived = true;
+            Debug.Log(packageReceived);
             
-
-            
-
-           
-
-           // this.GetComponent<AudioSource>().Play();
-
-            Debug.Log("received");
-            Debug.Log("boom");
             GameObject.Instantiate(particleReceived, collision.collider.gameObject.transform.position, Quaternion.identity);
         }
     }

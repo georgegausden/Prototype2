@@ -5,10 +5,12 @@ using UnityEngine;
 public class checkPackageStatus : MonoBehaviour
 {
     public float colorSwitchTime = 1.0f;
+    private bool packageReceived = false;
 
     private Renderer renderer;
     private float timeLeft = 0.0f;
     private bool isRed = true;
+   
 
     void Start()
     {
@@ -34,5 +36,6 @@ public class checkPackageStatus : MonoBehaviour
 
             timeLeft = colorSwitchTime;
         }
+
     }
 }

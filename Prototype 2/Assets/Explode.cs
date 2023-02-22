@@ -21,7 +21,7 @@ public class Explode : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("boom");
+        
         GameObject.Instantiate(particleBoom, collision.collider.gameObject.transform.position, Quaternion.identity);
     }
 }
