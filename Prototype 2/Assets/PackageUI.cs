@@ -18,5 +18,6 @@ public class PackageUI : MonoBehaviour
     {
         this.GetComponent<TextMeshProUGUI>().text = "Packages: " + player.numPackages + "/" + player.maxPackages;
 
+
     }
 }

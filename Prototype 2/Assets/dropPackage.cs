@@ -22,6 +22,7 @@ public class dropPackage : MonoBehaviour
 
             // Instantiate the prefab asset slightly below the player position
             Vector3 spawnPosition = new Vector3(playerPosition.x, playerPosition.y - yOffset, playerPosition.z);
+            this.GetComponent<AudioSource>().Play();
             Instantiate(woodCratePrefab, spawnPosition, Quaternion.identity);
 
 
