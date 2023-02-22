@@ -378,6 +378,7 @@
 "Assets/JMO Assets/WarFX/Spawn System/CFX_SpawnSystem.cs"
 "Assets/ModularFirstPersonController/FirstPersonController/FirstPersonController.cs"
 "Assets/PackageReceived.cs"
+"Assets/PackageUI.cs"
 -langversion:9.0
 
 /deterministic

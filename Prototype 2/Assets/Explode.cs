@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Explode : MonoBehaviour
 {
-    public GameObject particleBoom;
+    //public GameObject particleBoom;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +22,6 @@ public class Explode : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         
-        GameObject.Instantiate(particleBoom, collision.collider.gameObject.transform.position, Quaternion.identity);
+        //GameObject.Instantiate(particleBoom, collision.collider.gameObject.transform.position, Quaternion.identity);
     }
 }
