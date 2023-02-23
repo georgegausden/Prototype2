@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class checkPackageStatus : MonoBehaviour
 {
-    public float maxColorSwitchTime = 1.0f;
+    public float maxColorSwitchTime = 10.0f;
     public PackageReceived packageReceivedScript;
     public GameObject player;
     private float timeLeft = 0.0f;
@@ -31,11 +31,20 @@ public class checkPackageStatus : MonoBehaviour
             return; // return early to prevent the rest of the code from executing
         }
 
+        // Calculate the distance between the player and the object
+        float distance = Vector3.Distance(player.transform.position, transform.position);
+
+
+
+        // Calculate the color switch time based on the distance
+        colorSwitchTime = distance/1000; 
+
+        Debug.Log(colorSwitchTime);
         timeLeft -= Time.deltaTime;
 
         if (timeLeft <= 0.0f)
         {
-            
+
 
             if (isRed)
             {
