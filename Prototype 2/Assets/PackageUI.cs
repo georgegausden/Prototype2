@@ -16,7 +16,7 @@ public class PackageUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.GetComponent<TextMeshProUGUI>().text = "Packages: " + player.numPackages + "/" + player.maxPackages;
+        this.GetComponent<TextMeshProUGUI>().text = "Packages Dropped: " + player.numPackages + "/" + player.maxPackages + " Press mouse to drop package";
 
 
     }
